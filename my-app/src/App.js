@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer';
+import Theme from './components/Theme';
 
 function App() {
   return (
-    <div className="App te">
-      
-      <h1 className="text-3xl  text-mono text-center font-bold underline">
-      Hello world my love hh
-    </h1>
+    <div className="App ">
+       <Theme/>
+      <Footer/>
+     
     </div>
   );
 }

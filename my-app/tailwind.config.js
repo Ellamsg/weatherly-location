@@ -105,7 +105,8 @@ module.exports = {
        'airblack' :'#1D1D1E',
       'lilac' : '#A02279',
        'boxwind': '#D7D7D7',
-      'darkwind' : '#171717',
+      'darkwind' : '#171717', 
+      'range'    : ' #B93815',
       'darkwhite': '#434343',
     },
     fontFamily: {
