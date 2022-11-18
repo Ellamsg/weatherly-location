@@ -6,7 +6,7 @@ function App() {
     <div className="App te">
       
       <h1 className="text-3xl  text-mono text-center font-bold underline">
-      Hello world!
+      Hello world my love hh
     </h1>
     </div>
   );
