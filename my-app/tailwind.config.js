@@ -100,13 +100,14 @@ module.exports = {
       'wind':  '#27272A',
       'leaf': '#a3e635',
       'grade': '#ff001f',
-      'offwhite':'#D4D4D8',
+      'offwhite':'#82808F',
       'offgreen'  :'#00cba9',
        'airblack' :'#1D1D1E',
       'lilac' : '#A02279',
        'boxwind': '#D7D7D7',
       'darkwind' : '#171717', 
       'range'    : ' #B93815',
+      'range2'   : ' #FDEAD7',
       'darkwhite': '#434343',
     },
     fontFamily: {
@@ -157,6 +158,7 @@ module.exports = {
         '20': '32rem',
         '10': '10rem',
         '16': '25rem',
+        '40': '1003px',
         '8': '15rem'
       },
      
