@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 <div className=" h-40 md:h-[1000px] ">
  
  
-    <div className="lg:p-9 md:p-[35px] -z-10  relative lg:h-[560px] md:h-[420px] h-[300px]  p-3">
+    <div className="lg:p-9 md:p-[35px]   relative lg:h-[560px] md:h-[420px] h-[300px]  p-3">
       <p className="pt-3 absolute bottom-0  md:bottom-5">Help</p>
         <div className="border-b-2 flex  md:flex-col py-3 md:gap-2 gap-6 flex-row border-boxwind">
           <Link to="/Back" className="md:pt-0 pt-1 text-base font-medium">Back</Link>

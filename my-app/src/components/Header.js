@@ -10,7 +10,7 @@ const Header = () => {
     <div className=''>
 
 
-    <div className=' sticky  top-0 left-0 md:p-0  lg:text-xl text-xl md:text-base'>
+    <div className=' sticky  top-0 left-0 md:p-0 z-10 lg:text-xl text-xl md:text-base'>
       <div className='md:flex items-center md:py-4  justify-around bg-white '>
       <div className="md:pl-0 pt-3 md:pt-0 pl-2">
        <img className='' src="image/pink.png"/>
