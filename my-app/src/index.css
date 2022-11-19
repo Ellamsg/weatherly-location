@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 
+.der{
+  @apply border-b-2 p-2 pt-4 pb-4 gap-7 border-boxwind;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
