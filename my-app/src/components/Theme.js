@@ -1,11 +1,17 @@
+
 import { Link } from "react-router-dom"
+
+
  export default function Theme() {
+ 
    return(
 
-
-    <div className="lg:p-9 md:p-[35px] h-40  p-3">
-
-        <div className="border-b-2 flex md:flex-col py-3 md:gap-2 gap-6 flex-row border-boxwind">
+<div className=" h-40 md:h-[1000px] ">
+ 
+ 
+    <div className="lg:p-9 md:p-[35px] -z-10  relative lg:h-[560px] md:h-[420px] h-[300px]  p-3">
+      <p className="pt-3 absolute bottom-0  md:bottom-5">Help</p>
+        <div className="border-b-2 flex  md:flex-col py-3 md:gap-2 gap-6 flex-row border-boxwind">
           <Link to="/Back" className="md:pt-0 pt-1 text-base font-medium">Back</Link>
           <p className=" font-bold text-2xl md:py-2">Weathery settings</p>
         </div>
@@ -43,7 +49,7 @@ import { Link } from "react-router-dom"
         </div>
 
          {/*select theme*/}
-        <div className="relative w[400px] overflow-hidden">
+        <div className="relative w[400px]   overflow-hidden">
             <input type="checkbox"
             className="absolute peer top-0 inset-x-0 
              w-full h-5 opacity-0 
@@ -56,7 +62,7 @@ import { Link } from "react-router-dom"
           <h1 className="font-medium text-range text-lg">Theme</h1>
           <h1 className="   text-range3">select   preferred mode</h1>
           </div>
-          <div className="absolute bg-green` top-2 right-3
+          <div className="absolute  top-2 right-3
           text-white transition-transform duration-500
           rotate-0 peer-checked:rotate-180 
           ">
@@ -71,7 +77,7 @@ import { Link } from "react-router-dom"
                 
                 <div className=" p-3 justify-between flex flex-row border-b-2 hover:text-white hover:bg-range3 border-black">
                 <p>Light mode</p>
-               <img src="image/moon.png"/>
+               <img className="w-3 h-3" src="image/knight.png"/>
                  </div>
                 <div className="text-black justify-between flex flex-row hover:text-white p-3 hover:bg-range3 ">
                <p>Dark mode</p>
@@ -81,10 +87,10 @@ import { Link } from "react-router-dom"
             </div>
         
 
-          <p className="pt-3 ">Help</p>
+          
         </div>
 
-        
+        </div>
     </div>
    )
 }

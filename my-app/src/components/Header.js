@@ -22,8 +22,8 @@ const Header = () => {
       <p className="text-white">.</p>
       </div>
       
-      <div className={`md:flex md:items-center 
-        lg:gap-9 pt-6 md:pt-0 md:pb-0 pb-12 absolute md:static bg-white  md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? 'top-0 ':'top-[-490px]'}`}>
+      <div className={`md:flex md:items-center bg-white
+        lg:gap-9 pt-6 md:pt-0 md:pb-0 pb-12 absolute md:static   md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? 'top-0 ':'top-[-490px]'}`}>
           
           <div>
             <div>
@@ -52,7 +52,7 @@ const Header = () => {
               
             </div>
           </div>
-        <Button  className="">
+        <Button  className="mt-8">
        <Link to="/Back"> Weather settings</Link>
         </Button>
       </div>

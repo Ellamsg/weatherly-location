@@ -23,9 +23,9 @@ export default function Footer() {
 
         <div className=" ">
           <p className="md:py-2 py-4 md:pt-4 lg:pt-0 pt-5">Download the mobile app</p>
-          <div className="flex gap-5 flex-row">
-            <img src="image/apple.png" />
-            <img src="image/playstore.png" />
+          <div className="flex gap-5 flex-col md:flex-row">
+            <img className="md-auto w-9" src="image/apple.png" />
+            <img className="md-auto w-9" src="image/playstore.png" />
           </div>
         </div>
       </div>

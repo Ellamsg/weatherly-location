@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div className="App ">
+      <div className="App md:px-0 px-1 ">
         <Header />
         <Switch>
           <Route exact path="/">
