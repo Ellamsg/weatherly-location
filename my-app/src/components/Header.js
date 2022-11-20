@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Button from './Buttons';
 import { Link } from "react-router-dom"
+import {FaBars} from 'react-icons/fa'
+
 
 
 const Header = (props) => {
@@ -16,9 +18,10 @@ const Header = (props) => {
        <img className='' src="image/pink.png"/>
       </div>
       
-      <div onClick={()=>setOpen(!open)} className=' absolute right-3 top-2 cursor-pointer md:hidden'>
 
-      <img className='  h-6 w-6' name={open ? 'close':'menu'} src='image/button.png'/>
+      <div onClick={()=>setOpen(!open)} className='mt-3 h-[60px] w-[60px] flex justify-items-center pl-2 pt-2  rounded-[50%] border-boxwind border-2 absolute right-3 top-0 cursor-pointer md:hidden'>
+
+      <FaBars style={props.style} className='  text-3xl' name={open ? 'close':'menu'} />
       <p className="opacity-0">.</p>
       </div>
       
@@ -59,6 +62,7 @@ const Header = (props) => {
       </div>
     </div>
     </div>
+    
   )
 }
 

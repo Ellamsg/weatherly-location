@@ -6,13 +6,16 @@ import Theme from "./components/Theme";
 import Back from "./components/Back";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+
 function App() {
   const [darkMode, setOn] = React.useState(true)
+ 
   
-  
+
+
   const styles = {
-    backgroundColor: darkMode ? "#FFFFFF" : "#000000",
-   color: darkMode ? "#000000" : "#FFFFFF"
+    backgroundColor: darkMode ? "#000000" : "#FFFFFF",
+   color: darkMode ? "#FFFFFF" : "#000000"
 
 }
 function toggleoff(){
@@ -25,13 +28,13 @@ function toggle() {
 }
   return (
     <Router>
-      
+      <div >
       <div style={styles} className="App md:px-0 px-1 ">
       
         <Header style={styles} />
         <Switch>
           <Route exact path="/">
-            <Theme toggleoff={toggleoff} toggle={toggle} />
+            <Theme style={styles} toggleoff={toggleoff} toggle={toggle} />
           </Route>
           <Route exact path="/Back">
 
@@ -40,6 +43,7 @@ function toggle() {
         </Switch>
 
         <Footer />
+      </div>
       </div>
     </Router>
   );

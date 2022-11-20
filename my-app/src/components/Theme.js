@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom"
+import {FaAngleDown} from 'react-icons/fa'
 
 import React from "react"
  export default function Theme(props) {
@@ -33,7 +34,7 @@ import React from "react"
           text-white transition-transform duration-500
           rotate-0 peer-checked:rotate-180 
           ">
-            <img className=" h-1" src="image/downblk.png"/>
+              <FaAngleDown style={props.style} className="  "/>
           </div>
            {/*select content*/}
           <div className=" text-right overflow-hidden 
@@ -56,30 +57,30 @@ import React from "react"
               z-10 cursor-pointer
             "
             />
-          <div className=" py-2 gap-2 border-b-2 border-boxwind  w-full 
+          <div className="hover:text-range py-2 gap-2 border-b-2 border-boxwind  w-full 
           flex  flex-col
           ">
-          <h1 className="font-medium text-range text-lg">Theme</h1>
-          <h1 className="   text-range3">select   preferred mode</h1>
+          <h1  className="font-medium hover:text-range text-lg">Theme</h1>
+          <h1  className="   hover:text-range3">select   preferred mode</h1>
           </div>
           <div className="absolute  top-2 right-3
           text-white transition-transform duration-500
           rotate-0 peer-checked:rotate-180 
           ">
-            <img className=" h-1 " src="image/downblk.png"/>
+            <FaAngleDown style={props.style} className="  "/>
           </div>
            {/*select content*/}
           <div className=" grid justify-end  overflow-hidden 
           transition-all duration-500 max-h-0
           peer-checked:max-h-9
           ">
-            <div className="grid grid-cols-1  border-2 border-black rounded-md   w-8  ">
+            <div className="grid grid-cols-1  border-2 border-boxwind rounded-md   w-8  ">
                 
-                <div onClick={props.toggleoff} className=" p-3 justify-between flex flex-row border-b-2 hover:text-white hover:bg-range3 border-black">
+                <div onClick={props.toggleoff} className=" p-3 justify-between flex flex-row border-b-2 hover:text-white hover:bg-range3 border-boxwind">
                 <p>Light mode</p>
                <img className="w-3 h-3" src="image/knight.png"/>
                  </div>
-                <div  onClick={props.toggle} className=" justify-between flex flex-row hover:text-white p-3 hover:bg-range3 ">
+                <div   onClick={props.toggle} className=" justify-between flex flex-row hover:text-white p-3 hover:bg-range3 ">
                <button >Dark mode</button>
                <img src="image/sun.png"/>
                 </div>

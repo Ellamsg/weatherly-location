@@ -1,4 +1,4 @@
-
+import {FaLongArrowAltRight} from 'react-icons/fa'
 
 export default function Back (){
 
@@ -100,15 +100,21 @@ return(
         <div className="der ">
           <p className="">RAIN</p>
           <p  className="text-xl font-medium">Expect rain and scattered</p>
-          <p className="text-xl font-medium">thunderstorm by 12pm</p>
-          <p  className="text-sm text-range3 pt-2">View more info</p>
+          <p className="text-xl font-medium">thunderstorm by 12:00pm</p>
+          <div className='flex flex-row pt-2 gap-2'>
+          <p  className="text-sm text-range3 ">View more info</p>
+          <FaLongArrowAltRight className=' text-range3'/>
+          </div>
           <p className="font-bold pt-2">16th Nov,2022</p>
         </div>
         <div className="der">
         <p>RAIN</p>
           <p className="text-xl font-medium">Expect rain and scattered</p>
-          <p className="text-xl font-medium">thunderstorm by 12pm</p>
-          <p  className="text-sm text-range3 pt-2">View more info</p>
+          <p className="text-xl font-medium">thunderstorm by 12:00pm</p>
+          <div className='flex flex-row pt-2 gap-2'>
+          <p  className="text-sm text-range3 ">View more info</p>
+          <FaLongArrowAltRight className=' text-range3'/>
+          </div>
           <p className="font-bold pt-2">16th Nov,2022</p>
         </div>
         <div className="md:hidden block border-b-2 border-boxwind">
@@ -131,7 +137,10 @@ return(
         <p>RAIN</p>
           <p className="text-xl font-medium">Expect rain and scattered</p>
           <p className="text-xl font-medium">thunderstorm by 12:00pm</p>
-          <p  className="text-sm text-range3 pt-2">View more info</p>
+          <div className='flex flex-row pt-2 gap-2'>
+          <p  className="text-sm text-range3 ">View more info</p>
+          <FaLongArrowAltRight className=' text-range3'/>
+          </div>
          
       <div className="flex flex-row pt-4 pb-3 md:hidden gap-3">
           <img className="h-4" src="image/locate.png"/>
@@ -142,7 +151,10 @@ return(
         <p>RAIN</p>
           <p className="text-xl font-medium">Expect rain and scattered</p>
           <p className="text-xl font-medium">thunderstorm by 12:00pm</p>
-          <p  className="text-sm text-range3 pt-2">View more info </p>
+          <div className='flex flex-row pt-2 gap-2'>
+          <p  className="text-sm text-range3 ">View more info</p>
+          <FaLongArrowAltRight className=' text-range3'/>
+          </div>
           
         </div>
        
