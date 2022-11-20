@@ -7,17 +7,35 @@ import Back from "./components/Back";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
+  const [darkMode, setOn] = React.useState(true)
+  
+  
+  const styles = {
+    backgroundColor: darkMode ? "#FFFFFF" : "#000000",
+   color: darkMode ? "#000000" : "#FFFFFF"
+
+}
+function toggleoff(){
+  setOn(prevOn => !prevOn)
+  
+}
+
+function toggle() {
+  setOn(prevOn => !prevOn)
+}
   return (
     <Router>
-      <div className="App md:px-0 px-1 ">
-        <Header />
+      
+      <div style={styles} className="App md:px-0 px-1 ">
+      
+        <Header style={styles} />
         <Switch>
           <Route exact path="/">
-            <Theme />
+            <Theme toggleoff={toggleoff} toggle={toggle} />
           </Route>
           <Route exact path="/Back">
 
-            <Back />
+            <Back  />
           </Route>
         </Switch>
 

@@ -1,3 +1,5 @@
+
+
 export default function Back (){
 
 
@@ -14,7 +16,7 @@ return(
                     required
                     type="firstname"
                     placeholder="choose your location"
-                    className="form-input-1"
+                    className="form-input-1 bg-transparent"
                     name="first_name"
                     id="first_name"
                   />

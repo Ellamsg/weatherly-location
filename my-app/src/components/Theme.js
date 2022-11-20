@@ -1,8 +1,8 @@
 
 import { Link } from "react-router-dom"
 
-
- export default function Theme() {
+import React from "react"
+ export default function Theme(props) {
  
    return(
 
@@ -75,12 +75,12 @@ import { Link } from "react-router-dom"
           ">
             <div className="grid grid-cols-1  border-2 border-black rounded-md   w-8  ">
                 
-                <div className=" p-3 justify-between flex flex-row border-b-2 hover:text-white hover:bg-range3 border-black">
+                <div onClick={props.toggleoff} className=" p-3 justify-between flex flex-row border-b-2 hover:text-white hover:bg-range3 border-black">
                 <p>Light mode</p>
                <img className="w-3 h-3" src="image/knight.png"/>
                  </div>
-                <div className="text-black justify-between flex flex-row hover:text-white p-3 hover:bg-range3 ">
-               <p>Dark mode</p>
+                <div  onClick={props.toggle} className=" justify-between flex flex-row hover:text-white p-3 hover:bg-range3 ">
+               <button >Dark mode</button>
                <img src="image/sun.png"/>
                 </div>
               </div>
@@ -89,7 +89,7 @@ import { Link } from "react-router-dom"
 
           
         </div>
-
+      
         </div>
     </div>
    )
