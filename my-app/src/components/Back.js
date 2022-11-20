@@ -74,7 +74,7 @@ export default function Back() {
             />
             <div className="absolute flex flex-col gap-6  top-0 p-4 text-white  w-full">
               <div className="flex md:pt-3 pt-4 flex-row justify-between">
-                <p>today 9:41am</p>
+                <p>Today 9:41am</p>
                 <img className=" " src="image/load.png" />
               </div>
               <div>
@@ -84,9 +84,16 @@ export default function Back() {
                   Expect rain and scattered<br></br>
                   thunderstorm by<br></br> 12pm.
                 </p>
-                <p className="pt-4 text-sm font-semibold">
-                  FLOODING RISK<br></br>HIGH
+                <div className="">
+                  <div className="flex gap-2 pt-4  flex-row">
+                <p className=" text-sm font-semibold">
+                  FLOODING RISK
                 </p>
+                <img className="h-3 " src="image/info-circle.png"/>
+                </div>
+                <p className=" text-sm font-semibold">HIGH</p>
+                </div>
+               
               </div>
             </div>
           </div>
