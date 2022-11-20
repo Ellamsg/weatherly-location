@@ -75,11 +75,12 @@ import React from "react"
           peer-checked:max-h-9
           ">
             <div className="grid grid-cols-1  border-2 border-boxwind rounded-md   w-8  ">
-                
+                 {/* Toggle button */}
                 <div onClick={props.toggleoff} className=" p-3 justify-between flex flex-row border-b-2 hover:text-white hover:bg-range3 border-boxwind">
                 <p>Light mode</p>
                <img className="w-3 h-3" src="image/knight.png"/>
                  </div>
+                  {/* Toggle button */}
                 <div   onClick={props.toggle} className=" justify-between flex flex-row hover:text-white p-3 hover:bg-range3 ">
                <button >Dark mode</button>
                <img src="image/sun.png"/>
