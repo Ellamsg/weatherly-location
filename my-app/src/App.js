@@ -8,24 +8,26 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 function App() {
+  {/* Toggle function usestate*/}
   const [darkMode, setOn] = React.useState(true)
- 
-  
 
-
+  {/* Toggle function styles logic */}
   const styles = {
     backgroundColor: darkMode ? "#000000" : "#FFFFFF",
    color: darkMode ? "#FFFFFF" : "#000000"
 
 }
+ {/* Toggle function lightmode*/}
 function toggleoff(){
   setOn(prevOn => !prevOn)
   
 }
-
+ {/* Toggle function darkmode */}
 function toggle() {
   setOn(prevOn => !prevOn)
 }
+
+ {/* check theme.js, back.js for toggle style added properties and App.js*/}
   return (
     <Router>
       <div >
