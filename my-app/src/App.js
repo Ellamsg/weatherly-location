@@ -10,27 +10,38 @@ function App() {
   {
     /* Toggle function usestate*/
   }
-  const [darkMode, setOn] = React.useState(true);
+  const [darkMode, setOn] = React.useState("#000000");
+  const [colorMode, setcolor] = React.useState("#FFFFFF");
 
   {
     /* Toggle function styles logic */
   }
   const styles = {
-    backgroundColor: darkMode ? "#000000" : "#FFFFFF",
-    color: darkMode ? "#FFFFFF" : "#000000",
+    backgroundColor: darkMode ? darkMode:"#FFFFFF" ,
+    color: colorMode ? colorMode:"#000000",
   };
   {
     /* Toggle function lightmode*/
   }
   function toggleoff() {
-    setOn((prevOn) => !prevOn);
+    const  newtheme = darkMode ? darkMode:"#FFFFFF" ;
+    const  colortheme = colorMode ? colorMode:"#000000" ;
+    setOn(!newtheme)
+    setcolor(!colortheme)
+    
+  }
+
+  function toggle() {
+   const  newtheme = darkMode ? darkMode:"#000000" ;
+   const  colortheme = colorMode ? colorMode:"#FFFFFF" ;
+   setOn(newtheme)
+   setcolor(colortheme)
+   
   }
   {
     /* Toggle function darkmode */
   }
-  function toggle() {
-    setOn((prevOn) => !prevOn);
-  }
+ 
 
   {
     /* check theme.js, back.js for toggle style added properties and App.js*/
