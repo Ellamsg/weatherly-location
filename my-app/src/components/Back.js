@@ -82,7 +82,7 @@ export default function Back() {
                 <p className="pt-5">Rain</p>
                 <p className="font-bold text-[40px]">
                   Expect rain and scattered<br></br>
-                  thunderstorm by<br></br> 12 pm.
+                  thunderstorm by<br></br> 12pm.
                 </p>
                 <div className="">
                   <div className="flex gap-2 pt-4  flex-row">
