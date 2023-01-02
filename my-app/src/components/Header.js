@@ -56,7 +56,7 @@ const Header = (props) => {
             </div>
           </div>
         <Button  className="mt-8">
-       <Link to="/Theme"> Weather settings</Link>
+       <Link to="/Theme"> Weather setting</Link>
         </Button>
       </div>
       </div>
